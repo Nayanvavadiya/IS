@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date26</title>
+    <style>
+      body {
+        background-image: url('https://img.freepik.com/free-vector/gradient-connection-background_23-2150462053.jpg?semt=ais_hybrid&w=740');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 0;
+        height: 3000px;
+      }     
+      
+      .box {
+          background-color: rebeccapurple;
+          border-radius: 10px;
+          width: 100px;
+          height: 100px;
+          margin: 0px 40px;
+      }
+
+      .box:hover {
+        animation-name: rotate;
+        animation-duration: 3s;
+      }
+
+      @keyframes rotate {
+        0% {
+          transform: rotate(0);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      table {
+        border-collapse: collapse;
+        border: solid black 1px;
+        width: 250px;
+        height: 150px;
+        margin: 0px 40px;
+      }
+          td {
+            border: solid 1px black;
+          }
+          #r1 {
+            background-color: rgb(204, 221, 19);
+          }
+          #c12 {
+            background-color: cyan;
+          }
+          #r2 {
+            background-color: rgb(223, 221, 240);
+          }
+          #r3 {
+            background-color: rgb(16, 171, 96);
+          }
+
+      .normal{
+          width: 80px;
+          height: 80px;
+          background-color: rgb(180, 180, 180);
+          padding: 0px 0px;
+          margin: 0px 40px;
+      }  
+      
+
+      .changed {
+        width: 80px;
+        height: 80px;
+        transform: matrix(1, 2, -1, 1, 80, 80);
+        background-color: rgb(255, 0, 0);
+        margin: 0px 0px;
+        }
+      
+        .rotated {
+          width: 80px;
+          height: 80px;
+          transform: rotate(45deg); /* Equal to rotateZ(45deg) */
+          background-color: rgb(0, 19, 226);
+          margin: 0px 40px;
+        }
+
+
+        .scaled {
+          width: 80px;
+          height: 80px;
+          padding: 0px 0px;
+          transform: scale(2 , 0.7); /* Equal to scaleX(0.7) scaleY(0.7) */
+          background-color: 	rgb(0, 128, 128);
+          margin: 0px 70px;
+        }
+
+        .scaledx {
+          width: 80px;
+          height: 80px;
+          padding: 0px 40px;
+          transform: scaleY(2);
+          background-color: rgb(255, 222, 173);
+          margin: 0px 40px;
+        }
+
+        .scaledangle {
+          width: 100px;
+          height: 100px;
+          /* padding: 0px 0px; */
+          transform: rotate(3.1416rad);
+          background-color: rgb(102, 51, 153);
+          font-size: 25px;
+          margin: 0px 40px;
+        }
+
+        .blur{
+          filter: blur(4px);
+        }
+
+        .blur1{
+          filter: brightness(200%)
+        }     
+        
+        .blur2{
+          filter: drop-shadow(4px -6px 4mm rgb(0, 255, 255));
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: rgb(0, 177, 24); padding: 0px;">Hover to rotate</h1><div class="box"></div> <br>
+
+    <h1 style="color: ghostwhite; border: 5px dashed rgb(212, 255, 0); margin: auto; display: inline-block; padding: 10px;">Table with CSS property</h1> <br><br>
+    <table>
+      <tr id="r1">
+        <td id="c11">11</td>
+        <td id="c12">12</td>
+        <td id="c13">13</td>
+      </tr>
+      <tr id="r2">
+        <td id="c21">21</td>
+        <td id="c22">22</td>
+        <td id="c23">23</td>
+      </tr>
+      <tr id="r3">
+        <td id="c31">31</td>
+        <td id="c32">32</td>
+        <td id="c33">33</td>
+      </tr>
+    </table> <br>
+
+    <h1 style="color: rgb(18, 129, 198); border: 3px dashed salmon;display: inline-block; padding: 10px;">Done by 2D matrix</h1>
+    <div class="normal">Normal</div>
+    <div class="changed">Changed</div>            <br><br><br><br><br><br><br><br>
+
+
+    <h1 style="color: rgb(234, 255, 2); border: 4px dashed rgb(255, 255, 255); display: inline-block; padding: 10px;">Done by rotate()</h1>
+    <div class="normal">Normal</div><br>
+    <div class="rotated" id="r">Rotated</div>              <br>
+
+    <h1 style="color: rgb(117, 0, 250); border: 4px dashed rgb(255, 255, 255); display: inline-block; padding: 10px;">Done by Scale()</h1>
+    <div class="normal">Normal</div>
+    <div class="scaled">Scaled</div>  <br>
+
+
+    <div class="main">
+        <h1 style="color: rgb(175, 238, 238); border: 4px dashed rgb(255, 255, 255); display: inline-block; padding: 10px;">Done by ScaleY()</h1>
+      <div>
+        <div class="normal">Normal</div> <br><br><br>
+        <div class="scaledx">ScaledY</div>
+      </div>
+    </div> <br><br>
+
+    <div>
+        <h1 style="color: rgb(175, 238, 238); border: 4px dashed rgb(255, 255, 255); display: inline-block; padding: 10px;">using &ltangle&gt</h1>
+        <div class="normal">Normal</div> <br>
+        <div class="scaledangle">Scaled(angle)</div>
+    </div>
+    
+    <h1 style="color: darkkhaki; border: 3px dashed; display: inline-block; padding: 10px; ;">Use Filter functions : </h1> <br>
+    <img id="biur" class="blur" src="https://thumbs.dreamstime.com/b/falling-drop-rain-blue-earth-image-water-splash-crown-shape-water-splash-crown-shape-falling-drop-earth-140453719.jpg" alt="" width="300px">   <br><br>
+
+    <img id="biur" class="blur1" src="https://thumbs.dreamstime.com/b/falling-drop-rain-blue-earth-image-water-splash-crown-shape-water-splash-crown-shape-falling-drop-earth-140453719.jpg" alt="" width="300px">  <br><br><br>
+
+    <img id="biur" class="blur2" src="https://thumbs.dreamstime.com/b/falling-drop-rain-blue-earth-image-water-splash-crown-shape-water-splash-crown-shape-falling-drop-earth-140453719.jpg" alt="" width="300px">     
+    
+
+
+
+
+    
+    
+
+
+
+
+
+  </body>
+</html>
