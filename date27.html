@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-image: url('https://images.unsplash.com/photo-1729575846511-f499d2e17d79?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: 0;
+            height: 150vh;
+        }
+
+        span {
+            background-color: aqua;
+            font-size: 40px;
+            /* margin: 50px; */
+        }
+
+        div>span {
+            background-color: yellow;
+            font-size: 40px;
+            /* margin: 50px; */
+        }
+
+        li {
+            list-style-type: disc;
+            margin: 0px 50px;
+        }
+
+        li li {
+            list-style-type: circle;
+            text-decoration: wavy underline white;
+            margin: 0px 50px;
+        }
+
+        .joinBtn {
+            width: 10em;
+            height: 5ex;
+            background-color: red;
+            font-size: 20px;
+            /* background-image: linear-gradient(135deg, #f34079 40%, #fc894d); */
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            color: white;
+            cursor: pointer;
+            margin: 0px 50px;
+        }
+
+        .joinBtn:active {
+            box-shadow: 8px 8px 8px #00ff1e;
+        }
+
+        form :active {
+            color: red;
+
+
+        }
+
+        form button {
+            background: white;
+            cursor: pointer;
+        }
+
+        label,
+        input[type="submit"] {
+            color: rgb(244, 0, 0);
+            font-family: Papyrus, fantasy;
+            font-size: 30px;
+        }
+
+        input:checked {
+            outline: 2px solid deeppink;
+        }
+
+        #label1 {
+            margin: 20px;
+            font-size: 25px;
+            color: rgb(20, 2, 20);
+            font-family: Chalkduster, fantasy;
+        }
+
+        input:focus {
+            background-color: rgb(116, 101, 176);
+        }
+
+        select:focus {
+            background-color: rgb(186, 161, 74);
+        }
+
+        progress {
+            margin: 0px 50px;
+            margin: 40px;
+        }
+
+        progress:indeterminate {
+            width: 80vw;
+            height: 20px;
+        }
+
+        #ipl {
+            font-size: 40px;
+            color: red;
+            margin: 50px;
+        }
+
+        #players {
+            font-family: Comic Sans MS;
+
+                li:nth-child(-n + 3) {
+                border: 2px solid orange;
+                margin-bottom: 1px;
+                display:block;
+                }
+        }
+
+        li:nth-child(-n + 3) {
+            border: 2px solid orange;
+            margin-bottom: 1px;
+            /* display: inline-block; */
+            }
+
+            li:nth-child(odd) {
+            background-color: lightyellow;
+            display: inline-block;
+            }
+    </style>
+</head>
+
+<body>
+
+    <div style="margin: 10px;">
+        <span>
+            Span #1, in the div.
+            <span>Span #2, in the span that's in the div.</span>
+        </span>
+    </div>
+    <span style="margin: 10px;">Span #3, not in the div at all.</span> <br>
+
+    <ul>
+        <li style="color: rgb(89, 4, 227); font-size: 35px; font-family: Comic Sans MS;">
+            <div>Item 1</div>
+            <ul>
+                <li>Subitem A</li>
+                <li>Subitem B</li>
+            </ul>
+        </li>
+        <li style="color: goldenrod; font-size: 35px; font-family: Comic Sans MS;">
+            <div>Item 2</div>
+            <ul>
+                <li>Subitem A</li>
+                <li>Subitem B</li>
+            </ul>
+        </li>
+    </ul> <br>
+
+
+    <p
+        style="color: slateblue; font-family: Courier, monospace; font-size: 30px; font-weight: bold; text-decoration: underline;margin: 0px 25px;">
+        Would you like to subscribe ?</p><br>
+    <button class="joinBtn" style="margin: 0px 25px;">Subscribe</button> <br> <br><br>
+
+    <form>
+        <label for="my-button" style="color: rgba(101, 0, 233, 0.616); font-size: 30px; margin: 10px 25px;">My button:
+        </label> <br>
+        <button id="my-button" style="margin: 10px 25px; font-size: 30px;" type="button">Try to Click!</button>
+    </form>
+
+    <form>
+        <p style="color: rgb(243, 0, 8); font-size: 30px; font-family: Papyrus, fantasy; font-weight: bold;">How did you
+            find out about us?</p>
+        <label><input name="origin" type="radio" value="google" checked /> Google</label>
+        <label><input name="origin" type="radio" value="facebook" /> Facebook</label>
+    </form> <br><br>
+
+    <form id="form1" class="form1">
+        <p style="color: rgb(9, 0, 9); font-size: 40px; font-weight: bold; margin: 20px;">Enter your name and select
+            your country (:focus) </p>
+        <label id="label1" for="name">Enter your name : <input id="name" type="text"
+                style="height: 30px; width: 80ox;"></label> <br>
+        <label id="label1" for="country">Select your country : <select name="country"
+                style="height: 30px; width: 70px; margin: 0px 0px;">
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="Dubai">Dubai</option>
+            </select>
+    </form><br>
+
+    <!-- <progress></progress><br><br> -->
+
+    <p id="ipl">IPL</p>
+    <ul id="players">
+        <li>Virat Kohli – RCB (Royal Challengers Bengaluru)</li>
+        <li>MS Dhoni – CSK (Chennai Super Kings)</li>
+        <li>Rohit Sharma – MI (Mumbai Indians)</li>
+        <li>Hardik Pandya – MI (Mumbai Indians)</li>
+        <li>Shubman Gill – GT (Gujarat Titans)</li>
+        <li>KL Rahul – LSG (Lucknow Super Giants)</li>
+        <li>Ruturaj Gaikwad – CSK (Chennai Super Kings)</li>
+        <li>Sanju Samson – RR (Rajasthan Royals)</li>
+        <li>David Warner – DC (Delhi Capitals)</li>
+        <li>Faf du Plessis – RCB (Royal Challengers Bengaluru)</li>
+    </ul>
+
+
+
+
+</body>
+
+</html>
