@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date 28/05/2025</title>
+    <style>
+        body{
+            background-image: url('https://images.ctfassets.net/nnkxuzam4k38/219VUMa1SOxASKqCE2OgT4/be1c810344587bd7f6f203337d23602a/ranger-4df6c1b6.png');
+            background-size: cover;
+            background-repeat: repeat;
+            /* margin: 0px; */
+            height: 2000px;
+        }
+
+        label {
+            display: block;
+            margin-top: 1em;
+            }
+
+            input:placeholder-shown {
+            background-color: rgb(255, 255, 0);
+            border: 2px solid rgb(16, 15, 15);
+            border-radius: 5px;
+            }
+
+
+        p:target {
+        background-color: gold;
+        display: inline-block;
+        
+        }
+        
+        p:target i {
+        color: red;
+        }    
+        
+        input:user-invalid {
+            border: 4px solid rgb(0, 6, 2);
+            }
+
+            input:user-invalid + span::before {
+            content: "✖";
+            color: rgb(0, 0, 0);
+        }
+
+        .email{
+            background-color: blanchedalmond;
+            margin: 0px 0px;
+        }
+
+        * [lang^="en"] {
+        color: rgb(0, 26, 255);
+        font-size: 30px;
+        }
+
+        *.warning {
+        color: rgb(0, 255, 76);
+        font-size: 30px;
+        }
+
+        *#maincontent {
+        border: 1px solid rgb(255, 255, 255);
+        }
+
+        .navbar{
+            background-color: dodgerblue;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding-right: 15px;
+            padding-left: 15px;
+
+        }
+        .navdiv{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+        .logo{
+            font-size: 35px;
+            font-weight: 600;
+            color: white;
+        }
+        .mynav{
+            list-style: none;
+            display: inline-block;
+        }
+        .mynav a{
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            margin: 25px;
+        }
+        button{
+            background-color: black;
+            margin-left: 10px;
+            border-radius: 10px;
+            padding: 10px;
+            width: 150px;
+        }
+        button a{
+            color: white;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        progress{
+            margin: 20px 40px;
+        }
+
+        progress:indeterminate{
+            width: 90vw;
+            height: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <form style="margin: 0px 20px;">
+        <label for="name">Full Name:</label>
+        <input id="name" name="name" type="text" />
+
+        <label for="email">Email Address:</label>
+        <input id="email" name="email" type="email" placeholder="name@example.com" />
+
+        <label for="age">Your age:</label>
+        <input
+            id="age"
+            name="age"
+            type="number"
+   
+            min="18"
+            placeholder="You must be 18+" />
+    </form> <br><br>
+
+        <fieldset style=" display: inline-block; border: 3px solid black;">
+            <div style="margin: 20px;">
+                <h3>Table of Contents</h3>
+                <ol>
+                <li><a href="#p1">Jump to the first paragraph!</a></li>
+                <li><a href="#p2">Jump to the second paragraph!</a></li>
+                <li>
+                    <a href="#nowhere">
+                    This link goes nowhere, because the target doesn't exist.
+                    </a>
+                </li>
+                </ol>
+
+                <h3>My Fun Article</h3>
+                <p id="p1">
+                You can target <i>this paragraph</i> using a URL fragment. Click on the first
+                link above to try out!
+                </p>
+                <p id="p2">
+                This is <i>another paragraph</i>, also accessible from the second link above.
+                Isn't that delightful?
+                </p>    
+            </div>   
+        </fieldset>  
+
+    
+    <div style="margin: 20px;">
+        <form>
+            <label for="email">Email *: </label>
+            <input id="email" class="email" name="email" type="email" placeholder="Write a wrong email-here" required />
+            <span></span>
+        </form>
+    </div>
+
+    <div style="margin: 0px 10px;">
+        <p class="warning">
+        <span lang="en-us">A Blue span</span> in a Green paragraph.
+        </p>
+        <p id="maincontent" lang="en-gb">
+        <span class="warning">A Green span</span> in a Blue paragraph.
+        </p>    
+    </div>
+
+    <be><br></br>
+
+    <h1 style="margin: 0px 100vh;">Navbar</h1>
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo"><a href="#">CodeWithAI</a></div>
+            
+                    <ul>
+                        <li class="mynav"><a href="#">Home</a></li>
+                        <l class="mynav"><a href="#">Options</a></li>
+                        <li class="mynav"><a href="#">About us</a></li>
+                        <li class="mynav"><a href="#">Conect us </a></li>
+                        <button><a href="#">Sign in</a></button>
+                        <button><a href="#">Sign out</a></button>
+                    </ul>
+        </div>
+           
+    </nav>
+
+   <progress></progress>
+  
+</body>
+</html>
