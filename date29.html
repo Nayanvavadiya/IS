@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date 29/05/2025</title>
+
+    <style>
+        body{
+            background-image: url('https://media.istockphoto.com/id/1448111365/vector/abstract-blue-and-turquoise-toned-wavy-background.jpg?s=612x612&w=0&k=20&c=n1vOHepRDgoukJj6htZXnRi72sJgsBpX4UK4plDZgYs=');
+            background-size: cover;
+            background-repeat: repeat;
+
+            /* border: 5px solid black; */
+            border-top-style:  solid;     
+            border-left-style:  dotted ;
+            border-right-style: inset ;
+            border-bottom-style: groove;      
+        }
+
+        
+            #container {
+            margin: 2rem;
+            background-color: rgb(255 255 204);
+            border: 4px dashed black;
+            }
+
+            #contained {
+            margin: 2rem;
+            border-top: 24px black solid;
+            padding: 0px 28px;
+            overflow: auto;
+            background-color: white;
+            }
+            
+            #container1 {
+                
+                margin: 2rem;
+                background-color: aqua;
+                overflow: scroll;
+                height: 150px;
+                width: 150px;
+                border: 5px dashed orange;
+            }
+
+            q::before {
+            
+            content: "«";
+            color: rgb(255, 0, 0);
+            }
+
+            q::after {
+            
+            content: "»";
+            color: rgb(255, 255, 255);
+            }
+
+            .red-text-shadow {
+            text-shadow: red 0 5px;
+            }
+
+
+            a:focus {
+            outline: 8px ridge rgba(170, 50, 220, 0.6);
+            border-radius: 2rem;
+            }
+
+
+            .selection::selection {
+            color: red;
+            background-color: yellow;
+            }
+
+            .play{
+            writing-mode: vertical-rl;
+            color: white;
+            background-color: black;
+            padding: 10px;
+            
+            }
+
+    </style>
+
+</head>
+<body>
+    
+    <div id="container">
+        <div id="contained">
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam quae voluptates quaerat culpa placeat, molestiae sunt libero. Est assumenda possimus dolorem ad dicta! Voluptatibus, quidem?
+            </p>
+        </div>
+    </div>
+
+    <div id="container1">
+        <p>
+            Far out in the uncharted backwaters of the unfashionable end of the western
+            spiral arm of the Galaxy lies a small unregarded yellow sun. Orbiting this
+            at a distance of roughly ninety-two million miles is an utterly
+            insignificant little blue green planet whose ape-descended life forms are so
+            amazingly primitive that they still think digital watches are a pretty neat
+            idea.
+        </p>
+    </div>
+
+    <q style="font-size: 40px; margin: 2rem">Some quotes</q>, he said, <q style="font-size: 40px; margin: 2rem">are better than none.</q>
+
+    <p class="red-text-shadow" style="margin: 2rem; font-size: 25px;color: wh;">
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+        doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.
+    </p>
+
+    <fieldset style="margin: 2rem; display: inline-block; border: 3px solid white;">
+        <h1>Curser functions:</h1>
+        <div><button style="cursor:default;">Default</button></div><br>
+         <div><button style="cursor: help;">Help</button></div><br>
+         <div><button style="cursor: wait;">Wait</button></div><br>
+         <div><button style="cursor: crosshair;">crossshair</button></div><br>
+         <div><button style="cursor: not-allowed;">Not-allowed</button></div><br> 
+         <div><button style="cursor: grab;">Grab</button></div><br>
+         <div><button style="cursor: move;">Move</button></div><br>
+    </fieldset> <br>
+
+    <input type="text" style="caret-color: transparent; margin: 2rem; height: 40px; width: 200px;" placeholder="Please enter the text" > <br><br>
+
+
+    <a href="#" style="  border: 1px solid; 
+        font-size: 40px;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        border-radius: 3px;
+        display: inline-block;
+        margin: 2rem;
+        padding: 5px; 
+        height: 40px;
+        width: 200px;"
+        >Click me </a>
+
+
+    <p class="selection" style="font-size: 25px; margin: 2rem;">
+    <strong style="font-weight: bold; font-size: 25px; color: rgb(0, 0, 0); text-decoration:underline overline gold; ">Select Us </strong> a fragment of this paragraph, to see how its appearance is affected.
+    </p>
+
+
+    <h1 style="margin: 2rem;" class="play">Play with writing modes <br>writing-mode: vertical-lr</h1>
+
+</body>
+</html> 
