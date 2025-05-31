@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date 31/05/2025</title>
+    <style>
+
+        body{
+            border: 8px double white;
+            margin: 40px;
+            background: repeating-radial-gradient(#f69d3c, #3f87a6 50px);
+            background-repeat: no-repeat;
+            height: 1000px;
+            width: auto;
+        }
+
+            input {
+            margin-top: 1rem;
+            margin: 10px 20px;
+            /* background-color: #a90c0c; */
+            transition: 1s;       
+
+            }
+
+            input::file-selector-button {
+            font-weight: bold;
+            color: rgb(255, 0, 17);
+            padding: 0.5em;
+            border: thin solid grey;
+            border-radius: 3px;
+            }
+
+
+            input[type="file"]::file-selector-button:hover {
+            background-color: #81ecec;
+            border: 2px solid #00cec9;
+            }
+
+
+            .linear-gradient {
+                margin: 10px 20px;
+                width: 240px;
+                height: 80px;
+                font-weight: bold;
+                    background: linear-gradient(
+                    to right,
+                    rgb(244, 241, 241),
+                    orange,
+                    yellow,
+                    rgb(81, 255, 81),
+                    rgb(223, 223, 248),
+                    indigo,
+                    rgb(235, 40, 235)
+                );
+            }
+
+            .radial-gradient {
+            margin: 10px 20px;
+            width: 240px;
+            height: 80px;
+            font-weight: bold;
+            background: radial-gradient(rgb(255, 0, 0), rgb(37, 119, 174), rgb(242, 241, 241));
+            }
+  
+            .simple-linear {
+                font-weight: bold;
+                margin: 10px 20px;
+                width: 120px;
+                height: 120px;
+                background: linear-gradient(blue, pink);
+            }
+
+            .box {
+            display: inline-block;
+            margin: 1em;
+            min-width: 6.5em;
+            line-height: 6.5em;
+            text-align: center;
+            transition: 1s ease-in-out;
+            border: 0.25em dotted;
+            font-size: 30px;
+            font-weight: bold;
+            }
+
+            #box1:hover {
+            rotate: 90deg;
+            }
+
+            #box2:hover {
+            rotate: y 180deg;
+            }
+
+            .container {
+            border: 5px solid rgb(0, 255, 94);
+            margin: 40px;
+            }
+
+            .box1 {
+            border: 5px solid rebeccapurple;
+            background-color: lightgray;
+            padding: 10px;
+            height: 100px;
+            /* try changing the margin properties: */
+            margin-top: -40px;
+            margin-right: 30px;
+            margin-bottom: 40px;
+            margin-left: 4em;
+            font-size: 40px;
+            font-weight: 700;    
+            text-align: center;
+            }
+
+    </style>
+</head>
+<body>
+    <label style="margin: 10px 20px; font-size: 30px; font-weight: 1000; color: black;" for="Pic">Choose a profile picture:</label><br />
+
+    <input id="pic" type="file" name="avatar" accept="image/png, image/jpeg" /><br>
+    
+    <div class="linear-gradient">Linear gradient</div><br>
+    <div class="radial-gradient">Radial gradient</div><br>
+
+    <div class="simple-linear">Simple Linear </div><br>
+
+    <div class="box" id="box1">rotate Z</div>
+    <div class="box" id="box2">rotate Y</div>
+
+
+    <div class="container">
+    <div class="box1">Change my margin.</div>
+    </div>
+
+
+</body>
+</html>
