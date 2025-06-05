@@ -1,0 +1,251 @@
+/* * {
+  box-sizing: border-box;
+} */
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 0px;
+}
+
+ul {
+  display: flex;
+  gap: 4vw;
+  padding-left: 0;
+  overflow-x:auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+}
+
+
+/* ul img {
+  width: 100%;
+  max-width: 300px;
+  display: inline-block;
+  height: 60%;
+  width: 40%;
+  margin-top: 10px;
+  justify-content: center;
+} */
+
+.shiamge1 {
+  background-image: url(../glassimage.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: red;
+  font-size: 120%;
+}
+
+.shiamge2 {
+  background-image: url(../nature.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: red;
+  font-size: 120%;
+}
+
+.shiamge3 {
+  background-image: url(../elephant.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: red;
+  font-size: 120%;
+}
+
+.shiamge4 {
+  background-image: url(../balloon.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: red;
+  font-size: 120%;
+}
+
+
+li {
+  list-style-type: none;
+  background-color: #a9a9a9;
+            /* flex-grow: 0
+             આનો અર્થ: "વધારાની જગ્યા લેવી નહીં". 
+            flex-shrink: 0
+            આનો અર્થ: "item છુટા પડતી જગ્યા પર સંકોચાશે નહીં".
+            flex-basis: 100%
+            આનો અર્થ: "આ itemની width 100% રાખો". */
+  flex: 0 0 100%;
+  height: 300px;
+  /* padding-top: 20px; */
+  scroll-snap-align: start;
+  text-align: center;
+
+}
+ul {
+  scroll-marker-group: after;
+}
+ul::scroll-marker-group {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+li::scroll-marker {
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 50%;
+  content: "";
+}
+li::scroll-marker:target-current {
+  background-color: rgb(19, 18, 18);
+}
+
+
+ a {
+  display: inline-block;
+  width: 50px;
+  text-decoration: none;
+}   
+nav,
+.scroll-container {
+  display: block;
+  margin: 4em auto;
+  text-align: center;
+}
+nav {
+  width: 339px;
+  padding: 5px;
+  border: 1px solid black;
+}
+.scroll-container {
+  width: 350px;
+  height: 200px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+.scroll-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 5em;
+}
+
+
+#sec3{
+  width: 50%;
+  height: 250px;
+  overflow-y: auto;
+  margin: 10px 10px;
+  border: 2px solid black;
+}
+
+* {
+  box-sizing: border-box;
+}
+dl > div {
+  background: #fff;
+  padding: 24px 0 0 0;
+}
+
+dt {
+  background: #b8c1c8;
+  border-bottom: 1px solid #989ea4;
+  border-top: 1px solid #717d85;
+  color: #fff;
+  font:
+    bold 18px/21px Helvetica,
+    Arial,
+    sans-serif;
+  margin: 0;
+  padding: 2px 0 0 12px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: -1px;
+}
+
+dd {
+  font:
+    bold 20px/45px Helvetica,
+    Arial,
+    sans-serif;
+  margin: 0;
+  padding: 0 0 0 12px;
+
+}
+
+dd + dd {
+  border-top: 1px solid #ccc;
+} 
+
+
+
+/* body {
+  background: linear-gradient(to right, #667eea, #764ba2);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.login-container {
+  background-color: white;
+  margin-top: 20px;
+  padding: 30px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #667eea;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #667eea;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #5a67d8;
+}
