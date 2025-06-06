@@ -35,7 +35,7 @@ ul {
 } */
 
 .shiamge1 {
-  background-image: url(../glassimage.jpg);
+  background-image: url(assets/image/balloon.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -44,7 +44,7 @@ ul {
 }
 
 .shiamge2 {
-  background-image: url(../nature.jpg);
+  background-image: url(assets/image/elephant.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -53,7 +53,7 @@ ul {
 }
 
 .shiamge3 {
-  background-image: url(../elephant.jpg);
+  background-image: url(assets/image/glassimage.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -62,7 +62,7 @@ ul {
 }
 
 .shiamge4 {
-  background-image: url(../balloon.jpg);
+  background-image: url(assets/image/nature.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
