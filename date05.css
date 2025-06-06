@@ -40,7 +40,7 @@ ul {
   background-position: center;
   background-size: cover;
   color: red;
-  font-size: 120%;
+  font-size: 12px;
 }
 
 .shiamge2 {
@@ -88,7 +88,7 @@ li {
 
 }
 ul {
-  scroll-marker-group: after;
+  /* scroll-marker-group: after; */
 }
 ul::scroll-marker-group {
   display: flex;
