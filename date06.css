@@ -1,0 +1,153 @@
+/* #blend {
+  width: 40vw;
+  height: 40vh;
+  background: 
+    url('https://images.unsplash.com/photo-1506744038136-46273834b3fb'), 
+    url('https://images.unsplash.com/photo-1522199710521-72d69614c702');
+  background-blend-mode: screen;
+  background-size: cover;
+} */
+
+
+.container1 {
+  /* padding: 20px; */
+  justify-content: center;
+}
+
+#blendtext{
+    text-align: center;
+    /* margin-bottom: 20vh; */
+    margin-right: 20px;
+}
+
+
+#blend {
+  width: 40vh;
+  max-width: 600px;
+  aspect-ratio: 1 / 1; /* Keeps it square */
+  background: 
+    url('https://images.unsplash.com/photo-1506744038136-46273834b3fb'), 
+    url('https://images.unsplash.com/photo-1522199710521-72d69614c702');
+  background-blend-mode: screen;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+
+
+.isolate {
+  isolation: isolate;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  mix-blend-mode: screen;
+  position: absolute;
+    
+}
+
+
+.circle-1 {
+  background: red;
+  left: 0;
+  top: 0;
+}
+
+.circle-2 {
+  background: lightgreen;
+  left: 40px;
+  top: 0;
+}
+
+.circle-3 {
+  background: blue;
+  left: 20px;
+  top: 40px;
+}
+
+
+
+#container2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  gap: 1rem;
+  width: 100%;
+  max-width: 400px;
+  justify-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#container2 > div {
+  width: 50px;
+  height: 50px;
+  background-color: #8ca0ff;
+  border-radius: 8px;
+}
+
+
+section {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 175px;
+  border-radius: 5px;
+  background: #eee;
+}
+
+header {
+  padding: 0.7rem;
+  border-bottom: 2px solid #ccc;
+}
+
+main {
+  padding: 10px;
+}
+
+h2 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 1.1rem;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+p,
+li {
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+
+
+:root {
+  interpolate-size: allow-keywords;
+}
+
+section {
+  height: 2.5rem;
+  overflow: hidden;
+  transition: height ease 1s;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  background-color: greenyellow;
+}
+
+section:hover,
+section:focus {
+  height: max-content;
+}
+
+.acctext{
+    margin-top: 10px;
+    text-align: center;
+    color: red;
+}
