@@ -1,0 +1,72 @@
+.container1{
+    padding: auto;
+    margin: auto;
+    height: 100px;
+    width: 100px;
+    border: 5px solid #ddd;
+    border-radius: 50%;
+    border-top-color: #181818;
+    animation: rotate 1s infinite;
+
+}
+    @keyframes rotate {
+        100%{
+            rotate: 360deg;
+        }
+    }
+
+
+
+
+/*new section*/
+
+.text1{
+    text-align: center;
+    color: blue;
+}
+
+
+
+.Box{
+    height: 281px;
+    width: 420px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 18px;
+}
+
+.Box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all ease 1s;
+    border: 2px solid black;
+}
+.Box:hover img{
+    scale: 1.9;
+}
+
+
+/*New section*/
+.but{
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 9px;
+    background-color: lightgreen;
+    color: black;
+    padding: 12px 20px;
+    transition: all ease 0.4s;
+}
+
+button:hover{
+    box-shadow: 5px 5px 0px black;
+}
