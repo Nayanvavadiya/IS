@@ -1,0 +1,156 @@
+body {
+    background-image: url('https://media.istockphoto.com/id/1404533647/vector/abstract-wavy-neon-background-colorful-vector-illustration-on-a-dark-background.jpg?s=612x612&w=0&k=20&c=P7-jhsj_jODalMNihjq9tvvCWgHKTxnpvX-Cl2WiZVg=');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    height: 926px;
+    }     
+
+/*1st section Box*/
+.container {
+  max-width: 1200px;
+  
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+
+.box {
+  width: 150px;
+  height: 150px;
+  background-color: skyblue;
+  margin: 10px 10px;
+  text-align: center;
+  line-height: 150px;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 0px;
+  font-size: 30px;
+  font-weight: 800;
+
+  /* Animation settings */
+  animation-name: fade-move;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-move {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*2nd section ani-para*/
+
+.paragraphtext {
+  animation-name: slideIn;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  color: coral;
+  font-size: 30px;
+  font-weight: 600;
+  /* animation-iteration-count: infinite; */
+  /* animation-direction: alternate; */
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(200%) scale(2);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+  }
+}
+
+/*3rd section*/
+
+.animation {
+  /* animation: pulse 1s linear infinite; */
+  background-color: purple;
+  margin: 20px;
+}
+
+.animation {
+  color: #fff;
+  font: 1.2em sans-serif;
+  width: 10em;
+  padding: 1em;
+  border-radius: 1em;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/*4th Section*/
+
+
+.sun {
+  background-color: yellow;
+  border-radius: 50%; /* creates a circular background */
+  height: 100px; /* makes the sun the size of the viewport */
+  aspect-ratio: 1 / 1;
+  animation: 0.4s linear 2s infinite alternate sun-rise;
+}
+
+@keyframes sun-rise {
+  from {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.sun {
+  animation: 0.4s linear 3s  alternate sun-rise;
+} 
+
+
+#motion-demo {
+  offset-path: path("M 10 45 L 60 45 L 61 0 L 61 0 L 10 1 M 10 1 L 10 1 L 10 45");
+  animation: move 3000ms  alternate ease-in-out;
+  width: 40px;
+  height: 40px;
+  background: cyan;
+  margin: 15px 150px;
+}
+
+@keyframes move {
+  0% {
+    offset-distance: 0%;
+  }
+  100% {
+    offset-distance: 100%;
+  }
+}
