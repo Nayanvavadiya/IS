@@ -1,0 +1,78 @@
+body {
+    background-image: url('https://plus.unsplash.com/premium_photo-1701534008693-0eee0632d47a?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bGlnaHQlMjBjb2xvciUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    height: 926px;
+}
+
+
+
+.container {
+  max-width: 1200px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+h2 {
+  text-emphasis: triangle green;
+  -webkit-text-stroke: 2px rgb(94, 203, 97);
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+figure {
+  border: thin #c0c0c0 solid;
+  display: flex;
+  flex-flow: column;
+  padding: 5px;
+  max-width: 220px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+img {
+  max-width: 220px;
+  max-height: 150px;
+}
+
+figcaption {
+  background-color: #222;
+  color: #fff;
+  font: italic smaller sans-serif;
+  padding: 3px;
+  text-align: center;
+}
+
+
+
+
+:root {
+  overflow: hidden; /* hides any part of the sun below the horizon */
+  display: flex;
+  justify-content: center; /* centers the sun in the background */
+}
+
+.sun-arise {
+  border-radius: 50%; /* creates a circular background */
+  height: 100vh; /* makes the sun the size of the viewport */
+  aspect-ratio: 1 / 1;
+  animation: 4s linear 0s infinite alternate sun-rise;
+}
+
+@keyframes sun-rise {
+  from {
+    /* pushes the sun down past the viewport */
+    transform: translateY(110vh);
+    background-color: rgb(227, 234, 48);
+  }
+  to {
+    /* returns the sun to its default position */
+    transform: translateY(0);
+    background-color: rgb(255, 140, 0);
+  }
+}
